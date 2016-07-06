@@ -1,9 +1,7 @@
 package beans;
 
-public class PacketPret
-{
-    public PacketPret()
-    {
-	
+public class PacketPret {
+    public PacketPret() {
+
     }
 }

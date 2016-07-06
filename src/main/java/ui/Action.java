@@ -1,6 +1,5 @@
 package ui;
 
-public enum Action
-{
+public enum Action {
     MENUSERVEUR, MENUCLIENT, AUCUNE;
 }

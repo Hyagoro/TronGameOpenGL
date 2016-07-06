@@ -1,6 +1,5 @@
 package ui;
 
-public enum TypeMur 
-{
-	MURMOTO, MURMONDE;
+public enum TypeMur {
+    MURMOTO, MURMONDE;
 }
