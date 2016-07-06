@@ -22,8 +22,8 @@ public class ControleurColision {
             }
         }
 
-        for (int i = 0; i < joueurs.size(); i++) {
-            if (joueurs.get(i).isBlocMur((int) positionX, (int) positionY)) {
+        for (Player joueur1 : joueurs) {
+            if (joueur1.isBlocMur((int) positionX, (int) positionY)) {
                 if (joueur.isAlive()) {
                     joueur.setAlive(false);
                 }

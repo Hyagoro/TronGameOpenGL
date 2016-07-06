@@ -102,6 +102,10 @@ public class Menu {
         // client.getPlateforme().reset();
     }
 
+    /**
+     * Analyse the action to execute (choice of menu)
+     * @param action the action to execute
+     */
     private void analyserAction(Action action) {
         int xCarte = 300;
         int yCarte = 300;

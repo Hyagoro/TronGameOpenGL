@@ -40,10 +40,10 @@ public abstract class Bloc {
 
     private void drawVertices(int vertices, int vertex_size, int color_size) {
         GL15.glBindBuffer(GL15.GL_ARRAY_BUFFER, vbo_vertex_handle);
-        GL11.glVertexPointer(vertex_size, GL11.GL_FLOAT, 0, 0l);
+        GL11.glVertexPointer(vertex_size, GL11.GL_FLOAT, 0, 0L);
 
         GL15.glBindBuffer(GL15.GL_ARRAY_BUFFER, vbo_color_handle);
-        GL11.glColorPointer(color_size, GL11.GL_FLOAT, 0, 0l);
+        GL11.glColorPointer(color_size, GL11.GL_FLOAT, 0, 0L);
 
         GL11.glEnableClientState(GL11.GL_VERTEX_ARRAY);
         GL11.glEnableClientState(GL11.GL_COLOR_ARRAY);
@@ -88,9 +88,9 @@ public abstract class Bloc {
             float g = (float) color.getGreen() / 255f;
             float b = (float) color.getBlue() / 255f;
 
-            float x = new Float(this.x);
-            float y = new Float(this.y);
-            float z = new Float(this.z);
+            float x = (float) this.x;
+            float y = (float) this.y;
+            float z = (float) this.z;
 
             FloatBuffer vertex_data = BufferUtils.createFloatBuffer(vertices * vertex_size);
             // nord

@@ -50,9 +50,9 @@ public class Map {
             // float g = (float) color.getGreen() / 255f;
             // float b = (float) color.getBlue() / 255f;
 
-            float x = new Float(tailleX / 2);
-            float y = new Float(tailleY / 2);
-            float z = new Float(-5);
+            float x = (float) (tailleX / 2);
+            float y = (float) (tailleY / 2);
+            float z = (float) -5;
 
             FloatBuffer vertex_data = BufferUtils.createFloatBuffer(vertices * vertex_size);
             // dessus
@@ -82,10 +82,10 @@ public class Map {
         }
 
         GL15.glBindBuffer(GL15.GL_ARRAY_BUFFER, vbo_vertex_handle);
-        GL11.glVertexPointer(vertex_size, GL11.GL_FLOAT, 0, 0l);
+        GL11.glVertexPointer(vertex_size, GL11.GL_FLOAT, 0, 0L);
 
         GL15.glBindBuffer(GL15.GL_ARRAY_BUFFER, vbo_color_handle);
-        GL11.glColorPointer(color_size, GL11.GL_FLOAT, 0, 0l);
+        GL11.glColorPointer(color_size, GL11.GL_FLOAT, 0, 0L);
 
         GL11.glEnableClientState(GL11.GL_VERTEX_ARRAY);
         GL11.glEnableClientState(GL11.GL_COLOR_ARRAY);
@@ -103,7 +103,7 @@ public class Map {
 
     public Bloc getCase(int x, int y) {
         if (matrice.getEntite(x, y) != null)
-            return (Bloc) matrice.getEntite(x, y);
+            return matrice.getEntite(x, y);
         else
             return null;
     }

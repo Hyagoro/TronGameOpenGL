@@ -12,7 +12,7 @@ public class PacketAlerte {
     }
 
     public PacketAlerte(PacketAlerte object) {
-        this.alerte = new String(object.alerte);
+        this.alerte = object.alerte;
     }
 
     public String getAlerte() {

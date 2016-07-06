@@ -45,15 +45,15 @@ public class Plateforme {
      * @param IDClient
      */
     public void render() {
-        for (int i = 0; i < joueurs.size(); i++) {
-            joueurs.get(i).render();
+        for (Player joueur : joueurs) {
+            joueur.render();
             // joueurs.get(i).afficherWithOpenGL();
         }
     }
 
     public boolean isBlocMur(int x, int y) {
-        for (int i = 0; i < joueurs.size(); i++) {
-            if (joueurs.get(i).isBlocMur(x, y)) {
+        for (Player joueur : joueurs) {
+            if (joueur.isBlocMur(x, y)) {
                 return true;
             }
         }
@@ -102,10 +102,10 @@ public class Plateforme {
      * @param IDClient
      */
     public void update(int IDClient, ClientTron client) {
-        for (int i = 0; i < joueurs.size(); i++) {
+        for (Player joueur : joueurs) {
             if (joueursPret) {
-                joueurs.get(i).update();
-                joueurs.get(i).miseAJourDirection(IDClient, client);
+                joueur.update();
+                joueur.miseAJourDirection(IDClient, client);
             }
         }
     }
@@ -151,10 +151,10 @@ public class Plateforme {
     }
 
     public Player getJoueurByID(int ID) {
-        for (int i = 0; i < joueurs.size(); i++) {
+        for (Player joueur : joueurs) {
             // System.out.println("getJoueurByID : "+ID);
-            if (joueurs.get(i).getID() == ID) {
-                return joueurs.get(i);
+            if (joueur.getID() == ID) {
+                return joueur;
             }
         }
         return null;
