@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<conf>
+	<nickname>Toto</nickname>
+	<color>
+		<r>0</r>
+		<g>102</g>
+		<b>255</b>
+	</color>
+	<fps>35</fps>
+	<ipServer>localhost</ipServer>
+</conf>
