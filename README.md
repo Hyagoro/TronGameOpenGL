@@ -1,4 +1,4 @@
-# TronGameOpenGL
+# Tron based game developed in Java with LWJGL
 Tron based multiplayer game in OpenGL. This is an old project that I used to learn Java and OpenGL when I was in university.
 Unfortunately I wrote it in French, so feel free to ask if you want me to translate it in English. 
 
